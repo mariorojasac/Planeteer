@@ -25,9 +25,7 @@ $(function () {
     // Event listners
     $form.on("submit", handleGetData);
 
-    // function deleteData() {
-
-    // }
+  
 
     // functions
     function handleGetData(event) {
@@ -45,7 +43,7 @@ $(function () {
             // error function
 
             function (error) {
-                // the failure callback
+             
                 console.log(error);
                 alert("ERROR 404");
             }
@@ -82,9 +80,7 @@ $(function () {
   // Event listners
   $button.on("click", handleGetData);
 
-  // function deleteData() {
 
-  // }
 
   // functions
   function handleGetData(event) {
@@ -99,23 +95,18 @@ $(function () {
         render();
       },
 
-      // error function
 
       function (error) {
-        // the failure callback
+       
         console.log(error);
         alert("ERROR 404");
       }
     );
   }
-
-  // render  function
   function render() {
     $title.text(`Picture Of The Day: ${nasaData.title}`);
     $description.text(nasaData.explanation);
-    $picture.html(`<img src="${nasaData.url}">`);
+    $picture.html(`<img id="pictureoftheday" src="${nasaData.url}">`);
 
-    //   console.log(JSON.stringify())
-    // console.log(typeof weather.main[0])
   }
 });
