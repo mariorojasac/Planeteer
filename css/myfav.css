@@ -1,0 +1,103 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    margin-top: 20vh;
+    background-color: white;
+    border: 10px;
+    border-color: grey;
+    border: 20px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#trBtn {
+    margin-right: 150px;
+    border-color: red;
+    background-color: red;
+    color: black;
+     
+}
+
+
+#top {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    color: white;
+    /* margin: 0px; */
+    /* padding: 0px; */
+
+
+}
+
+#top h1 {
+    background-color: black;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    
+
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+   position: absolute;
+    background-color: white;
+
+    /* margin: 0px; */
+    margin-left: 198px;
+
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+
+
+}
+
+input {
+     border:3px solid #97BF7A;
+    width: 290px;
+    margin-right: 10px;
+
+}
+
+
+button {
+    background-color: white;
+    color: #97BF7A;
+    height: 40px;
+    border-color: #97BF7A;
+    border:3px solid #97BF7A;
+    width: 90px;
+}
