@@ -65,58 +65,57 @@ $(function () {
 });
 
 // get picture of the day 
-// $(function () {
-//   // const Variables
+$(function () {
+  // const Variables
 
-//   const BASE_URL = "https://images-api.nasa.gov/search?q=";
+  const BASE_URL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
-//   let nasaData;
+  let nasaData;
 
-//   // cached Elements
-//   const $title = $("#title");
-//   const $description = $("#description");
-//   const $picture = $("#picture");
-//   const $form = $("form");
-//   const $input = $('input[type="text"]');
+  // cached Elements
+  const $title = $("#titleofday");
+  const $description = $("#descriptionofday");
+  const $picture = $("#pictureofday");
+  const $button = $("#buttonoftheday");
 
-//   // Event listners
-//   $form.on("submit", handleGetData);
 
-//   // function deleteData() {
+  // Event listners
+  $button.on("click", handleGetData);
 
-//   // }
+  // function deleteData() {
 
-//   // functions
-//   function handleGetData(event) {
-//     event.preventDefault();
-//     const searchText = $input.val();
-//     $input.val("");
+  // }
 
-//     // get api
-//     $.ajax(`${BASE_URL}${searchText}&media_type=image&keywords=space`).then(
-//       function (data) {
-//         console.log(data);
-//         nasaData = data;
-//         render();
-//       },
+  // functions
+  function handleGetData(event) {
+    event.preventDefault();
+    
 
-//       // error function
+    // get api
+    $.ajax(`${BASE_URL}`).then(
+      function (data) {
+        console.log(data);
+        nasaData = data;
+        render();
+      },
 
-//       function (error) {
-//         // the failure callback
-//         console.log(error);
-//         alert("ERROR 404");
-//       }
-//     );
-//   }
+      // error function
 
-//   // render  function
-//   function render() {
-//     $title.text(nasaData.collection.items[1].data[0].title);
-//     $description.text(nasaData.collection.items[1].data[0].description);
-//     $picture.html(`<img src="${nasaData.collection.items[1].links[0].href}">`);
+      function (error) {
+        // the failure callback
+        console.log(error);
+        alert("ERROR 404");
+      }
+    );
+  }
 
-//     //   console.log(JSON.stringify())
-//     // console.log(typeof weather.main[0])
-//   }
-// });
+  // render  function
+  function render() {
+    $title.text(`Picture Of The Day: ${nasaData.title}`);
+    $description.text(nasaData.explanation);
+    $picture.html(`<img src="${nasaData.url}">`);
+
+    //   console.log(JSON.stringify())
+    // console.log(typeof weather.main[0])
+  }
+});
