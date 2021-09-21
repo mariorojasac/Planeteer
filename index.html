@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- FILE LINKS  -->
@@ -22,6 +25,7 @@
     <link rel="icon" type="image/png" href="img/icons8-solar-system-64.png">
     <title>PLANETEER.COM</title>
 </head>
+
 
 
 <body>
@@ -74,7 +78,7 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"
+                        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"
                             aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
@@ -110,7 +114,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/pexels-pixabay-2150.jpg" alt="space pic">
+                            <img class="d-block w-100" src="./img/pexels-alex-andrews-821644.jpg" alt="space pic">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3>Picture Of The Day</h3>
                                 <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -144,19 +148,25 @@
                     <p id="description"></p>
                 </div>
 
-                
+
                 <div class="picture">
                     <P>Picture :</P>
                     <p id="picture"></p>
                 </div>
 
             </div>
-
-            <form>
-                <input type="text" id="fname" name="fname" placeholder="Search Solar System">
-                <input type="submit" id="lname" name="lname" value="Get Info">
+            <!-- input field  -->
+            <form class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="col-12">
+                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                    <div class="input-group">
+                        <input type="text" id="fname" class="form-control" name="fname" placeholder="Search Solar System">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary" id="lname" name="lname" value="Get Info">
+                </div>
             </form>
-
         </div>
 
         <!-- FOOTER  -->
