@@ -62,6 +62,10 @@ $(function () {
     }
 });
 
+
+
+
+
 // get picture of the day 
 $(function () {
   // const Variables
@@ -78,7 +82,7 @@ $(function () {
 
 
   // Event listners
-  $button.on("click", handleGetData);
+  $("#car").on("click", handleGetData);
 
 
 
