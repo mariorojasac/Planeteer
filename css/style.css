@@ -87,3 +87,7 @@ input:hover {
 #copyright {
   font-size: 10px;
 }
+
+#gif {
+  border-radius: 50px;
+}
