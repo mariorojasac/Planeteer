@@ -215,7 +215,7 @@ $(function () {
    // const Variables
 
    const BASE_URL =
-     "https://newsapi.org/v2/everything?q=Earth&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+     "https://newsapi.org/v2/everything?q=Earth&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=48e1055bccde4e798fa136b5e4277994";
 
    let newsData;
 
