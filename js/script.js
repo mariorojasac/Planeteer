@@ -122,3 +122,130 @@ $(function () {
 
   }
 });
+
+
+
+
+// get news https://newsapi.org/v2/everything?q=tesla&from=2021-08-23&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1 
+//newsapi.org/v2/everything?domains=wsj.com&apiKey=0704ad543992470888c9d74aa1bcf7e1
+ $(function () {
+  // const Variables
+
+  const BASE_URL = "https://newsapi.org/v2/everything?q=SpaceX&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+
+  let newsData;
+
+  // cached Elements
+  const $title = $("#newsFirst");
+
+  // Event listners
+  $(document).ready(handleGetData);
+  // $button.on("click", handleGetData);
+
+  // functions
+  function handleGetData(event) {
+    // event.preventDefault();
+
+    // get api
+    $.ajax(`${BASE_URL}`).then(
+      function (data) {
+        console.log(data);
+        newsData = data;
+        render();
+      },
+
+      function (error) {
+        console.log(error);
+        alert("ERROR 404");
+      }
+    );
+  }
+
+  function render() {
+    
+    $title.html(`<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`
+    );
+  }
+ });
+
+
+ $(function () {
+   // const Variables
+
+   const BASE_URL =
+     "https://newsapi.org/v2/everything?q=NASA&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+
+   let newsData;
+
+   // cached Elements
+   const $title = $("#newsSecond");
+
+   // Event listners
+   $(document).ready(handleGetData);
+   // $button.on("click", handleGetData);
+
+   // functions
+   function handleGetData(event) {
+     // event.preventDefault();
+
+     // get api
+     $.ajax(`${BASE_URL}`).then(
+       function (data) {
+         console.log(data);
+         newsData = data;
+         render();
+       },
+
+       function (error) {
+         console.log(error);
+         alert("ERROR 404");
+       }
+     );
+   }
+
+   function render() {
+     $title.html(
+       `<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`
+     );
+   }
+ });
+
+
+ $(function () {
+   // const Variables
+
+   const BASE_URL =
+     "https://newsapi.org/v2/everything?q=Earth&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+
+   let newsData;
+
+   // cached Elements
+   const $title = $("#newsThird");
+
+   // Event listners
+   $(document).ready(handleGetData);
+   // $button.on("click", handleGetData);
+
+   // functions
+   function handleGetData(event) {
+     // event.preventDefault();
+
+     // get api
+     $.ajax(`${BASE_URL}`).then(
+       function (data) {
+         console.log(data);
+         newsData = data;
+         render();
+       },
+
+       function (error) {
+         console.log(error);
+         alert("ERROR 404");
+       }
+     );
+   }
+
+   function render() {
+     $title.html(`<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`);
+   }
+ });

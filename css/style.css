@@ -51,7 +51,10 @@ a {
   text-decoration: none;
   color: white;
 }
-
+.donatesec {
+    text-decoration: none;
+  color: black;
+}
 #social {
   padding: 2px;
 }
@@ -87,8 +90,29 @@ input:hover {
 #gif {
   border-radius: 50px;
 }
+#newstitle {
+  color: red;
+}
+#newsh2 {
+color: white;
+}
+#newsFirst {
+  border: 5px solid red;
+  /* padding-left: 2vw;
+  height: 8vh; */
+}
 
+#newsSecond {
+  border: 5px solid red;
+  /* padding-left: 2vw;
+  height: 8vh; */
+}
 
+#newsThird {
+  border: 5px solid red;
+  /* padding-left: 2vw;
+  height: 8vh; */
+}
 
 
 

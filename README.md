@@ -22,7 +22,8 @@ also, using the search will bring the first search of the nasa image api.
 
 # Screenshot(s): 
 
-![Screen Shot](img/IMG_0316.jpg?raw=true "Ipad view")
+![Screen Shot](img/IMG_0317.jpg?raw=true "desktop view")
+![Screen Shot](img/IMG_0262.jpg?raw=true "mobile view")
 
 
 
