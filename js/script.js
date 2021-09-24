@@ -251,3 +251,38 @@ $(function () {
      );
    }
  });
+
+
+const form = document.getElementById("submitButtonForMyFav");
+const item = document.getElementById("itemFav");
+
+
+
+ form.addEventListener("click", clicked);
+
+ function clicked(event) {
+   event.preventDefault();
+   const value = document.getElementById("valuefrominputtext").value;
+   if (value == "pluto" || value == "Pluto" || value == "PLUTO") {
+     alert("Please Enter A REAL Planet!");
+   } else {
+     const li = document.createElement("li");
+     li.className = "itemfavcontent";
+     li.appendChild(document.createTextNode(value));
+
+     const button = document.createElement("button");
+
+     button.className = "buttonn";
+     button.appendChild(document.createTextNode("x"));
+     li.appendChild(button);
+     item.appendChild(li);
+   }
+ }
+ 
+$("ul").on("click", "button", function () {
+  $(this)
+    .closest("li")
+    .fadeOut(300, function () {
+      $(this.remove());
+    });
+});

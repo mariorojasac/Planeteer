@@ -20,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- FILE LINKS  -->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <!-- TAB -->
     <link rel="icon" type="image/png" href="img/icons8-solar-system-64.png" class="img-fluid">
     <title>PLANETEER.COM</title>
@@ -193,7 +193,7 @@
                 </div>
             </div>
         </div>
-<hr>
+        <hr>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
@@ -207,7 +207,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="p-3"id="newsThird">
+                    <div class="p-3" id="newsThird">
                         <p></p>
                     </div>
                 </div>
@@ -264,7 +264,51 @@
                     </div>
                 </form>
             </div>
-<hr>
+
+            <hr>
+
+            <!-- myfavorite planet -->
+
+
+
+            <div class="Container mfContainer">
+                <div class="row">
+                    <div class="col">
+                        <div class="addItem">
+                            <div>
+                                <h1 class="myfavh">My Favorite Planet</h1>
+                            </div>
+
+
+                        </div>
+                        <form action="">
+                            <input class="btn bg-light" type="text" name="addItem" placeholder="Add Planet"
+                                id="valuefrominputtext">
+                            <button class="btn btn-primary " id="submitButtonForMyFav" type="submit">Submit</button>
+                        </form>
+
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="row"></div>
+                    <div class="col">
+                        <div>
+                            <hr>
+                            <h3 class="myfavh">Planets</h3>
+                            <ul class="itemFav" id="itemFav">
+                                <li class="itemfavcontent">Example: Mars<button class="btn buttonn">X</button></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <hr>
             <!-- video -->
             <div class="container container-fluid">
                 <div id="search" class="row row-content">
@@ -292,23 +336,27 @@
                 </div>
             </div>
 
-        <hr>
+            <hr>
 
             <!-- resources & donate  -->
 
-            <div class="container"> 
+            <div class="container">
                 <div id="donate" class="row g-2">
                     <div class="col-6">
-                        <div class="p-3 border bg-light "><a class="donatesec" href="https://www.nasa.gov/">NASA'S WEBSITE</a></div>
+                        <div class="p-3 border bg-light "><a class="donatesec" href="https://www.nasa.gov/">NASA'S
+                                WEBSITE</a></div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light"><a class="donatesec" href="http://stuffin.space/">Stuff in space</a></div>
+                        <div class="p-3 border bg-light"><a class="donatesec" href="http://stuffin.space/">Stuff in
+                                space</a></div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light"><a class="donatesec" href="https://www.spacex.com/">Space x'S WEBSITE</a></div>
+                        <div class="p-3 border bg-light"><a class="donatesec" href="https://www.spacex.com/">Space x'S
+                                WEBSITE</a></div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light"><a class="donatesec" href="http://astria.tacc.utexas.edu/AstriaGraph/">AstriaGraph</a></div>
+                        <div class="p-3 border bg-light"><a class="donatesec"
+                                href="http://astria.tacc.utexas.edu/AstriaGraph/">AstriaGraph</a></div>
                     </div>
                 </div>
             </div>
@@ -329,7 +377,8 @@
                             <a id="social"
                                 href="mailto:planeteer_info@planeteer.com?subject = Feedback&body = Message">Send
                                 Us Your Feedback</a>
-                            <p id="copyright">&copy; Copyright 2021 & All Rights Reserved NASA & Space X - Design by Mario Rojas</p>
+                            <p id="copyright">&copy; Copyright 2021 & All Rights Reserved NASA & Space X - Design by
+                                Mario Rojas</p>
                         </div>
                     </div>
                 </div>
