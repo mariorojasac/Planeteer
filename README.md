@@ -16,7 +16,7 @@ also, using the search will bring the first search of the nasa image api.
 * JavaScript
 * Jquery
 * Google Fonts
-* News API
+* Gnews API $
 * Nasa Images API
 * Nasa APOD API
 
@@ -31,6 +31,7 @@ also, using the search will bring the first search of the nasa image api.
 
 # Future Enhancements: 
 * More content 
+* Wiki API
 * More data displayed and graphed 
 * Blog post from nasa and/or space x 
 * SpaceX API
