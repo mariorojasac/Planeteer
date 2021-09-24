@@ -10,12 +10,13 @@ also, using the search will bring the first search of the nasa image api.
 
 
 # Technologies Used: 
-* HTML 5
+* HTML5
 * CSS 
 * Bootstrap
 * JavaScript
 * Jquery
 * Google Fonts
+* News API
 * Nasa Images API
 * Nasa APOD API
 
