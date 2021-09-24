@@ -131,7 +131,8 @@ $(function () {
  $(function () {
   // const Variables
 
-  const BASE_URL = "https://newsapi.org/v2/everything?q=SpaceX&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+  const BASE_URL =
+    "https://gnews.io/api/v4/search?q=%22space%20x%22&lang=en&token=95bb4c1fbf5834c3e3207f47939ea018";
 
   let newsData;
 
@@ -163,8 +164,7 @@ $(function () {
 
   function render() {
     
-    $title.html(`<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`
-    );
+    $title.html(`<a href="${newsData.articles[0].url}">${newsData.articles[0].title}</a>`);
   }
  });
 
@@ -173,7 +173,7 @@ $(function () {
    // const Variables
 
    const BASE_URL =
-     "https://newsapi.org/v2/everything?q=NASA&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1";
+     "https://gnews.io/api/v4/search?q=nasa&lang=en&token=95bb4c1fbf5834c3e3207f47939ea018";
 
    let newsData;
 
@@ -205,7 +205,7 @@ $(function () {
 
    function render() {
      $title.html(
-       `<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`
+       `<a href="${newsData.articles[0].url}">${newsData.articles[0].title}</a>`
      );
    }
  });
@@ -215,7 +215,7 @@ $(function () {
    // const Variables
 
    const BASE_URL =
-     "https://newsapi.org/v2/everything?q=Earth&from=2021-09-01&domains=cnn.com&sortBy=publishedAt&apiKey=48e1055bccde4e798fa136b5e4277994";
+     "https://gnews.io/api/v4/search?q=tesla&lang=en&token=95bb4c1fbf5834c3e3207f47939ea018";
 
    let newsData;
 
@@ -246,6 +246,8 @@ $(function () {
    }
 
    function render() {
-     $title.html(`<a href="${newsData.articles[1].url}">${newsData.articles[1].title}</a>`);
+     $title.html(
+       `<a href="${newsData.articles[0].url}">${newsData.articles[0].title}</a>`
+     );
    }
  });
