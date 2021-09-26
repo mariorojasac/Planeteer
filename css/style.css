@@ -7,7 +7,6 @@ body {
   margin: 5px;
 }
 
-
 h2 {
   color: #3046c5;
 }
@@ -45,7 +44,6 @@ header h2 {
 
 li {
   padding: 5px;
-  /* text-decoration:none; */
 }
 
 a {
@@ -99,20 +97,14 @@ color: white;
 }
 #newsFirst {
   border: 5px solid red;
-  /* padding-left: 2vw;
-  height: 8vh; */
 }
 
 #newsSecond {
   border: 5px solid red;
-  /* padding-left: 2vw;
-  height: 8vh; */
 }
 
 #newsThird {
   border: 5px solid red;
-  /* padding-left: 2vw;
-  height: 8vh; */
 }
 
 
@@ -135,7 +127,6 @@ color: white;
     color: white;
     border-radius: 8px;
     padding: 6px;
-    /* text-decoration:none; */
     height: 28px;
     
 
