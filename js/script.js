@@ -7,6 +7,7 @@ $(function () {
 
 });
 
+// nasa search
 
 $(function () {
   // const Variables
@@ -69,6 +70,7 @@ $(function () {
 
 
 // get picture of the day 
+
 $(function () {
   // const Variables
 
@@ -123,7 +125,7 @@ $(function () {
   }
 });
 
-
+// news space 
 
 
 // get news https://newsapi.org/v2/everything?q=tesla&from=2021-08-23&sortBy=publishedAt&apiKey=0704ad543992470888c9d74aa1bcf7e1 
@@ -168,6 +170,7 @@ $(function () {
   }
  });
 
+//  news nasa
 
  $(function () {
    // const Variables
@@ -210,6 +213,7 @@ $(function () {
    }
  });
 
+//  news api tesla
 
  $(function () {
    // const Variables
@@ -278,6 +282,9 @@ const item = document.getElementById("itemFav");
      item.appendChild(li);
    }
  }
+
+ 
+//  delete function
  
 $("ul").on("click", "button", function () {
   $(this)
